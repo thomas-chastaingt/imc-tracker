@@ -2,6 +2,7 @@ import React from 'react';
 import Input from './components/Input';
 import Title from './components/Title';
 import GraphicMen from './components/graphics/men';
+import Calorie from './components/Calorie'
 
 class App extends React.Component {
 
@@ -41,6 +42,7 @@ class App extends React.Component {
         <Title />
         <Input handleWeight = {this.handleWeight} handleHeight = {this.handleHeight} handleAge = {this.handleAge}/>
         <GraphicMen />
+        <Calorie height={this.state.height} weight={this.state.weight} age={this.state.age} />
       </div>
     );
   }
